@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  mumblecop:
+    image: jjmumblebot
+    build: .
+    environment:
+      - "ADDRESS=localhost"
+      - "PASSWORD=password"
+    volumes:
+     - /path/to/cert:/data/cert
+     - /path/to/logs:/data/logs
+     - /path/to/media:/data/media
+     - /path/to/privileges:/usr/src/app/privileges

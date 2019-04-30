@@ -6,6 +6,7 @@ services:
     environment:
       - "ADDRESS=localhost"
       - "PASSWORD=password"
+      - "CHANNEL=guest"
     volumes:
      - /path/to/cert:/data/cert
      - /path/to/logs:/data/logs

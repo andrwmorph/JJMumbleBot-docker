@@ -14,7 +14,7 @@ sed "s|SERVER_IP|$SERVER_IP|;
      s|USERNAME|$USERNAME|;
      s|CERT_FILE_PATH|/data/cert/cert.pem|;
      s|TEMP_IMG_DIR_PATH|/data/tmp|;
-     s|PERM_MEDIA_DIR_PATH|/data/media|;
+     s|PERM_MEDIA_DIR_PATH|/data/media/|;
      s|VLC_PATH|vlc|;
      s|PLUGINS_DIR_PATH|plugins|;
      s|LOGS_DIR_PATH|/data/logs|;" \

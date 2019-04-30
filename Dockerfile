@@ -2,7 +2,7 @@ FROM python:3-alpine
 
 WORKDIR /usr/src/app
 
-RUN apk add --no-cache git zlib-dev jpeg-dev gcc musl-dev vlc opus-dev && chown 910:910 . && mkdir /data && chown 910:910 /data
+RUN apk add --no-cache git ffmpeg zlib-dev jpeg-dev gcc musl-dev vlc opus-dev && chown 910:910 . && mkdir /data && chown 910:910 /data
 
 RUN git clone --recurse-submodules https://github.com/DuckBoss/JJMumbleBot . && pip3 install --no-cache-dir -r requirements.txt 
 
